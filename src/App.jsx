@@ -1,19 +1,10 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-
-import Navbar from './components/Navbar';
+import Home from './pages/Home';
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <main className="block">
-      <Navbar />
-      <div className="App text-3xl font-bold underline text-rose-500">
-        Teess
-      </div>
-    </main>
-  );
+  return <Home />;
 }
 
 export default App;
