@@ -50,11 +50,19 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #eb4961;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -70,6 +78,6 @@ button:focus-visible {
   }
 }
 
-@layer components {
+/* @layer components {
   //component style
-}
+} */
