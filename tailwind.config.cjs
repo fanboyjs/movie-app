@@ -1,8 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand__red: "#F41B3B",
+        brand__yellow: "#F9CC0D",
+        brand__green: "#1EBC99",
+        brand__blue: "#1884F7",
+        black__primary: "#0A070B",
+        black__second: "#363536",
+        black__third: "#4F4E50",
+        black__fourth: "#807E81",
+      },
+      spacing: {
+        space__1: "1rem",
+        space__2: "1.5rem",
+        space__3: "2rem",
+        space__4: "3rem",
+        space__5: "4rem",
+        space__6: "5rem",
+        space__7: "6rem",
+        space__8: "7rem",
+        space__9: "8rem",
+      },
+    },
   },
   plugins: [],
 };
