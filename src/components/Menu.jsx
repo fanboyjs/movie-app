@@ -2,7 +2,7 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div className="wrapper flex overflow-x-auto overflow-y-hidden border-t-4 border-solid border-dark__third px-5 py-3">
+    <div className="wrapper flex overflow-x-auto overflow-y-hidden border-t-4 border-solid border-dark__third px-5 py-3 md:text-lg">
       <a className="mr-5 flex min-w-fit gap-x-2 ">
         <img src="/public/images/home.svg" className=" w-5" />
         <span>Home </span>
