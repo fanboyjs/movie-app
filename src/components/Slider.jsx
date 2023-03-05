@@ -1,6 +1,7 @@
 import React from 'react';
 import { datas } from '../../services/data';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import PosterCard from './PosterCard';
 
 const Slider = () => {
   return (
@@ -17,16 +18,7 @@ const Slider = () => {
 
       <div className="wrapper flex h-96 flex-row gap-5  ">
         {datas.map((poster) => {
-          return (
-            <div key={poster.id} className="h-96 max-h-fit w-96 ">
-              <img
-                src={poster.image}
-                alt=""
-                className="max-h-max max-w-xs"
-                width={200}
-              />
-            </div>
-          );
+          return <PosterCard key={poster.id} poster={poster} />;
         })}
       </div>
     </div>
